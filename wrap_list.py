@@ -17,12 +17,12 @@ list_member = []
 amount_com = 3
 for i in range(amount_com):
     list_member.append(input('участник введите через запятую свое имя, и кол-во продуктов необходимое'
-                             ' пример: Вася, 5, 6, 3 ='))
+                             ' пример: Вася, 5, 6, 3 = ')
+                       )
 for j in list_member:
     list_d = [k.strip() for k in j.split(',')]
     list_tab.append(list_d)
     #получили список списков
-#TODO
 #надо все сложить и распечатать результаты
 for s in list_tab:
     product1 += int(s[1])
